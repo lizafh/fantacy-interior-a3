@@ -24,15 +24,17 @@
     
         .parrot {
     background-color: rgba(171, 239, 95, 0.5);
-}
+
     
+}
+
     </style>
 
 </head>
 <body class="manrope-font max-w-screen-xl    mx-auto border border-red-400  ">
-  <section class="bg-[#f4f4f4]">
+  <section class="bg-[#FAFAFA]">
 
-    <header class="lg:px-20 p-4 border border-red-500">
+    <header class="lg:px-20 p-6 ">
         <!-- ----------------nav start--------------------------- -->
         <nav >
             <div class="navbar ">
@@ -61,11 +63,11 @@
         
                 <!-- ---------------- -->
         
-                <div class="dropdown ms-32 flex justify-end w-full">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <div class="dropdown  ms-32 flex justify-end w-full relative">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden rounded-full  bg-white">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
+                        class="h-6 w-5"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -76,16 +78,31 @@
                           d="M4 6h16M4 12h8m-8 6h16" />
                       </svg>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
+                  <div class="absolute right-48 top-4">
+                    <ul 
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52  p-2 shadow">
                     
-                      <li><a>Service</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact Us</a></li>
-                    </ul>
+                    <li ><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blog</a></li>
+                    
+                    <li><a>Contact Us</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass ms-2 p-2 bg-white rounded-full"></i></li>
+                    <li>  <i class="fa-solid fa-cart-shopping ms-2 p-2 bg-white rounded-full"></i></li>
+                    <li>
+                      <button class="px-2  text-center  w-40 ms-2 rounded-2xl bg-[#ABEF5F] py-2 text-sm font-medium flex " >
+                          <div >
+                              <span class="font-bold me-1 ps-1 ">Book Consult</span> 
+                          </div>
+                          <div class=" text-xs bg-black text-white px-2 py-1 rounded-full"> <i class="fa-solid fa-arrow-up  rotate-45  "></i> </div>
+                      </button>
+                    </li>
+                 
+                  </ul>
+                  </div>
+
                   </div>
         
                 <!-- -------- -->
@@ -118,8 +135,8 @@
         <!-- ----------------banner start--------------------------- -->
 
 
-<div class="w-full lg:w-[96%] my-6">
-    <div class="flex justify-center mx-auto w-[100%] lg:w-[60%] max-w-screen-lg ">
+<div class="w-full  mx-auto lg:w-[96%] my-6">
+    <div class="flex justify-center  mx-auto w-[100%] lg:w-[60%] max-w-screen-lg ">
         <img class=" w-full " src="./assets/banner.png" alt="">
     </div>
     <div class="text-center w-[95%] lg-w-[87%]">
@@ -140,6 +157,57 @@
 </div>
 
          </header>
+         <!-- ----------------header end -------------->
+
+        
+        
+        
+        
+        
+         <!-- ----------design thoughtful start------------- -->
+
+<div  class=".container bg-[#F4F4F4] lg:flex px-4 lg:px-16 gap-6 py-6 mb-8">
+<!-- left -->
+    <div class="lg:w-1/2 lg:pt-2 " >
+        <div class="relative lg:text-center ">
+            <div class=" w-40  hidden lg:flex border absolute  border-black border-dashed px-1  py-7"><img  src="./assets/Vector.png" alt=""></div>
+            <button class="btn btn-sm bg-white lg:ml-20 lg:mt-24 mt-4 hover:bg-[#88ef5fa9] border-none" >About us  <i class="fa-solid fa-arrow-up rotate-90  "></i></button>
+            <!-- text -->
+            <div class="lg:ps-6">
+                <h2 class="text-3xl font-extrabold my-4">We design thoughtful, liveable spaces</h2> 
+                <p class="my-4">Discover the essence of global design trends blended with local craftsmanship, offering a luxurious transformation for your home.</p>
+             </div>
+             <div>
+                <div class="border  px-2 py-5 flex rounded-lg gap-2 bg-white border-none">
+<div class="lg:w-2/6 w-full  lg:ms-3 mx-1 flex items-center justify-items-center">
+<img class="lg:h-16 lg:w-16 h-20" src="./assets/commercial.png" alt="">
+</div>
+<div ><h4 class="text-xl font-bold my-2">Commercial</h4>
+    <p>This aims to create functional, attractive, engaging, and efficient spaces that meet the needs of the business and its customers or employees.</p></div>
+
+                </div>
+                <div class="border mt-4 mb-4  px-2 py-5 flex rounded-lg gap-2 bg-white border-none">
+<div class="lg:w-2/6 w-full  lg:ms-3 mx-1 flex items-center justify-items-center">
+<img class="lg:h-16 lg:w-16 h-20" src="./assets/residential.png" alt="">
+</div>
+<div><h4 class="text-xl font-bold my-2">Residential</h4>
+    <p> This can include houses, apartments, condos, and anywhere else where people reside. The architect may build the house.</p></div>
+
+                </div>
+               
+             </div>
+        </div>
+</div>
+<!-- right -->
+ <div class="lg:w-1/2   lg:pt-20">
+    <img class="h-[300px] w-full lg:h-full" src="./assets/Rectangle.png" alt="">
+ </div>
+</div>
+
+
+
+ <!-- ----------design thoughtful end------------- -->
+
   </section>
  
 <!-- ------------------------------------- -->
